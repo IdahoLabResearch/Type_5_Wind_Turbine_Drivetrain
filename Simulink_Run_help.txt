@@ -1,7 +1,7 @@
 Please follow these steps.
 
 1. Run the file "add_paths.m"
-2. Run "run_5mw_drivetrain_stand_alone_example.m"
+2. From example folder Run "run_5mw_drivetrain_stand_alone_example.m"
 3. Run "Type_5_Torque_Converter_Initialization.m" file to initialize the torque converter model. 
 4. Run "AB_load_data.m" file
 5. Run "AB_init.m" file (make sure you have interp.m file in the same folder)
