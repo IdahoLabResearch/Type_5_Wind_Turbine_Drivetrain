@@ -1,0 +1,24 @@
+Please follow these steps.
+
+1. Run "Type_5_Torque_Converter_Initialization.m" file to initialize the torque converter model. 
+2. Run "AB_load_data.m" file
+3. Run "AB_init.m" file (make sure you have interp.m file in the same folder)
+4. Open the "Type_5_Wind_Turbine_Drivetrain_Simulink_Model". 
+5. In simulink, go to modelling tab, click model settings and then model properties, click callbacks tab and then initFcn* and insert this in Model initialization function:
+
+Ts =2.5e-5;
+
+R_pu = 0.005;
+X_pu = 0.03;
+B_pu = 0.00275;
+
+Z_161 = 259.21;
+Z_44 = 19.36;
+Z_46 = 237.75;
+Z_12_47 = 17.47;
+
+AB_load_data;
+AB_init;  
+
+
+6. Run the simulink model "Type_5_Wind_Turbine_Drivetrain_Simulink_Model".
